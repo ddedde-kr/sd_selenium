@@ -50,7 +50,7 @@ def send_key_element(send_key_value):
         return False
 
 def get_wait_height():
-    xpath_value = "div#txt2img_results>div" ## 결과 창 
+    xpath_value = "div#txt2img_results>div" # 
     try:
         element = shadow.find_element(xpath_value) 
         size = element.size
@@ -61,7 +61,7 @@ def get_wait_height():
 
 def click_xpath_from_shadow(xpath_value):
     try:
-        element = shadow.find_element(xpath_value) ## 정상 동작 한다 이건 
+        element = shadow.find_element(xpath_value)  
         element.click()
         return True
     except:
